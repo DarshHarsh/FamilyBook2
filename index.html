@@ -1,0 +1,24 @@
+<html>
+<head> <title> My Family Book  </title> </head>
+<body>
+<center style="margin-top: 150px;">
+<img src="Dadi.jpeg" id="familyMemberPic" width="300px" height="300px">
+<h2 id="familymemberName"> Dadi </h2>
+<button onclick="update();">Next</button> </center>
+<script>
+var images=["Dadi.jpeg","Sonu.jpeg","Monu.jpeg","Saryu.jpeg","Archana.jpeg","Sara.jpeg","Harsh.jpeg","Darsh.jpeg","Riddhima.jpeg","Yoshika.jpeg","Oscar.jpeg"];
+var names= ["Dadi","Sonu","Monu","Saryu","Archana","Sara","Harsh","Darsh","Riddhima","Yoshika","Oscar"];
+var i=0;
+function update(){
+console.log(names.length);
+if(i>=names.length){
+i=0;
+}
+document.getElementById("familymemberName").innerHTML=names[i];
+document.getElementById("familyMemberPic").src=images[i];
+i++;
+}
+
+</script>
+</body>
+</html>
